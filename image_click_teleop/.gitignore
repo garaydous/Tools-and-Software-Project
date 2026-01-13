@@ -1,0 +1,11 @@
+build/
+install/
+log/
+__pycache__/
+*.pyc
+.DS_Store
+*.swp
+*.swo
+*.egg-info/
+dist/
+.pytest_cache/
