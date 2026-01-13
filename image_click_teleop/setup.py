@@ -24,6 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
+		'camera_publisher = image_click_teleop.camera_publisher:main',
+        	'click_teleop = image_click_teleop.click_teleop_node:main',
         ],
     },
 )
