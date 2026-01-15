@@ -66,12 +66,12 @@ class ClickTeleopNode(Node):
         msg.header.frame_id = 'base_link'
 
         if y < self.center_y:
-            msg.twist.linear.x = 0.2
+            msg.twist.linear.x = 0.1
             self.get_logger().info(
                 f'FORWARD: click y={y}, center={self.center_y}'
             )
         else:
-            msg.twist.linear.x = -0.2
+            msg.twist.linear.x = -0.1
             self.get_logger().info(
                 f'BACKWARD: click y={y}, center={self.center_y}'
             )
