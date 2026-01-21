@@ -1,0 +1,26 @@
+[0.620s] Invoking command in '/home/maria/ros2_project_ws/src/Tools-and-Software-Project/image_click_teleop': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maria/ros2_project_ws/src/Tools-and-Software-Project/build/image_click_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/image_click_teleop build --build-base /home/maria/ros2_project_ws/src/Tools-and-Software-Project/build/image_click_teleop/build install --record /home/maria/ros2_project_ws/src/Tools-and-Software-Project/build/image_click_teleop/install.log --single-version-externally-managed install_data
+[0.828s] running egg_info
+[0.842s] writing ../build/image_click_teleop/image_click_teleop.egg-info/PKG-INFO
+[0.842s] writing dependency_links to ../build/image_click_teleop/image_click_teleop.egg-info/dependency_links.txt
+[0.842s] writing entry points to ../build/image_click_teleop/image_click_teleop.egg-info/entry_points.txt
+[0.842s] writing requirements to ../build/image_click_teleop/image_click_teleop.egg-info/requires.txt
+[0.842s] writing top-level names to ../build/image_click_teleop/image_click_teleop.egg-info/top_level.txt
+[0.871s] reading manifest file '../build/image_click_teleop/image_click_teleop.egg-info/SOURCES.txt'
+[0.872s] writing manifest file '../build/image_click_teleop/image_click_teleop.egg-info/SOURCES.txt'
+[0.872s] running build
+[0.872s] running build_py
+[0.872s] copying image_click_teleop/click_teleop_node.py -> /home/maria/ros2_project_ws/src/Tools-and-Software-Project/build/image_click_teleop/build/lib/image_click_teleop
+[0.872s] running install
+[0.877s] running install_lib
+[0.893s] copying /home/maria/ros2_project_ws/src/Tools-and-Software-Project/build/image_click_teleop/build/lib/image_click_teleop/click_teleop_node.py -> /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/python3.12/site-packages/image_click_teleop
+[0.894s] byte-compiling /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/python3.12/site-packages/image_click_teleop/click_teleop_node.py to click_teleop_node.cpython-312.pyc
+[0.896s] running install_data
+[0.896s] copying launch/click_teleop.launch.py -> /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/share/image_click_teleop/launch
+[0.896s] running install_egg_info
+[0.912s] removing '/home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/python3.12/site-packages/image_click_teleop-0.0.0-py3.12.egg-info' (and everything under it)
+[0.912s] Copying ../build/image_click_teleop/image_click_teleop.egg-info to /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/python3.12/site-packages/image_click_teleop-0.0.0-py3.12.egg-info
+[0.913s] running install_scripts
+[1.020s] Installing camera_publisher script to /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/image_click_teleop
+[1.020s] Installing click_teleop script to /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/image_click_teleop
+[1.020s] writing list of installed files to '/home/maria/ros2_project_ws/src/Tools-and-Software-Project/build/image_click_teleop/install.log'
+[1.040s] Invoked command in '/home/maria/ros2_project_ws/src/Tools-and-Software-Project/image_click_teleop' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/maria/ros2_project_ws/src/Tools-and-Software-Project/build/image_click_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/image_click_teleop build --build-base /home/maria/ros2_project_ws/src/Tools-and-Software-Project/build/image_click_teleop/build install --record /home/maria/ros2_project_ws/src/Tools-and-Software-Project/build/image_click_teleop/install.log --single-version-externally-managed install_data

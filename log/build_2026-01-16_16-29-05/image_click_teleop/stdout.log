@@ -1,0 +1,24 @@
+running egg_info
+writing ../build/image_click_teleop/image_click_teleop.egg-info/PKG-INFO
+writing dependency_links to ../build/image_click_teleop/image_click_teleop.egg-info/dependency_links.txt
+writing entry points to ../build/image_click_teleop/image_click_teleop.egg-info/entry_points.txt
+writing requirements to ../build/image_click_teleop/image_click_teleop.egg-info/requires.txt
+writing top-level names to ../build/image_click_teleop/image_click_teleop.egg-info/top_level.txt
+reading manifest file '../build/image_click_teleop/image_click_teleop.egg-info/SOURCES.txt'
+writing manifest file '../build/image_click_teleop/image_click_teleop.egg-info/SOURCES.txt'
+running build
+running build_py
+copying image_click_teleop/click_teleop_node.py -> /home/maria/ros2_project_ws/src/Tools-and-Software-Project/build/image_click_teleop/build/lib/image_click_teleop
+running install
+running install_lib
+copying /home/maria/ros2_project_ws/src/Tools-and-Software-Project/build/image_click_teleop/build/lib/image_click_teleop/click_teleop_node.py -> /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/python3.12/site-packages/image_click_teleop
+byte-compiling /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/python3.12/site-packages/image_click_teleop/click_teleop_node.py to click_teleop_node.cpython-312.pyc
+running install_data
+copying launch/click_teleop.launch.py -> /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/share/image_click_teleop/launch
+running install_egg_info
+removing '/home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/python3.12/site-packages/image_click_teleop-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../build/image_click_teleop/image_click_teleop.egg-info to /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/python3.12/site-packages/image_click_teleop-0.0.0-py3.12.egg-info
+running install_scripts
+Installing camera_publisher script to /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/image_click_teleop
+Installing click_teleop script to /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/image_click_teleop
+writing list of installed files to '/home/maria/ros2_project_ws/src/Tools-and-Software-Project/build/image_click_teleop/install.log'

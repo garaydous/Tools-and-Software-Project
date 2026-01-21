@@ -1,28 +1,49 @@
 import os
-
 from launch import LaunchDescription
-from launch.actions import SetEnvironmentVariable, IncludeLaunchDescription
+from launch.actions import (
+    IncludeLaunchDescription, 
+    DeclareLaunchArgument, 
+    TimerAction,
+    ExecuteProcess
+)
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 
-
 def generate_launch_description():
-    set_tb3_model = SetEnvironmentVariable(
-        name='TURTLEBOT3_MODEL',
-        value='burger'
+    robot_ip_arg = DeclareLaunchArgument(
+        'robot_ip',
+        default_value='172.17.0.2',
+        description='IP address of the UR5e robot or URSim'
     )
 
-    tb3_gazebo_launch = IncludeLaunchDescription(
+    ur_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(
-                get_package_share_directory('turtlebot3_gazebo'),
+                get_package_share_directory('ur_robot_driver'),
                 'launch',
-                'empty_world.launch.py'
+                'ur_control.launch.py'
             )
-        )
+        ),
+        launch_arguments={
+            'ur_type': 'ur5e',
+            'robot_ip': LaunchConfiguration('robot_ip'),
+            'launch_rviz': 'true',
+        }.items(),
     )
 
+    switch_controllers = ExecuteProcess(
+        cmd=[
+            'ros2', 'control', 'switch_controllers',
+            '--activate', 'scaled_joint_trajectory_controller',
+            '--deactivate', 'joint_trajectory_controller'
+        ],
+        shell=False,
+        output='screen'
+    )
+
+    # Camera node
     camera_node = Node(
         package='image_click_teleop',
         executable='camera_publisher',
@@ -37,10 +58,27 @@ def generate_launch_description():
         output='screen'
     )
 
+    # Delay controller switch to ensure controllers are loaded
+    delayed_switch = TimerAction(
+        period=5.0,
+        actions=[switch_controllers]
+    )
+
+    delayed_camera = TimerAction(
+        period=8.0,
+        actions=[camera_node]
+    )
+
+    delayed_teleop = TimerAction(
+        period=9.0,
+        actions=[teleop_node]
+    )
+
     return LaunchDescription([
-        set_tb3_model,
-        tb3_gazebo_launch,
-        camera_node,
-        teleop_node,
+        robot_ip_arg,
+        ur_launch,
+        delayed_switch,
+        delayed_camera,
+        delayed_teleop,
     ])
 

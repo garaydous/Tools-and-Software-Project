@@ -21,8 +21,6 @@ class CameraPublisher(Node):
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
         self.cap.set(cv2.CAP_PROP_FPS, 30)
         self.bridge = CvBridge()
-        
-        self.get_logger().info('Camera publisher started')
 
     def timer_callback(self):
         ret, frame = self.cap.read()

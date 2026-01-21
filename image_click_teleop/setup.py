@@ -12,15 +12,15 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-	(os.path.join('share', package_name, 'launch'),
-	 glob('launch/*.launch.py')),
+        (os.path.join('share', package_name, 'launch'),
+         glob('launch/*.launch.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='maria',
     maintainer_email='marialuisgarrido100@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='Image-based click teleop interface for UR5 robot',
+    license='Apache-2.0',
     extras_require={
         'test': [
             'pytest',
@@ -28,8 +28,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-		'camera_publisher = image_click_teleop.camera_publisher:main',
-        	'click_teleop = image_click_teleop.click_teleop_node:main',
+            'camera_publisher = image_click_teleop.camera_publisher:main',
+            'click_teleop = image_click_teleop.click_teleop_node:main',
         ],
     },
 )

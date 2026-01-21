@@ -1,0 +1,21 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:363: UserWarning: Unbuilt egg for pytest-repeat [unknown version] (/usr/lib/python3/dist-packages)
+  self.local_index = Environment(self.shadow_path + sys.path)
+running egg_info
+writing image_click_teleop.egg-info/PKG-INFO
+writing dependency_links to image_click_teleop.egg-info/dependency_links.txt
+writing entry points to image_click_teleop.egg-info/entry_points.txt
+writing requirements to image_click_teleop.egg-info/requires.txt
+writing top-level names to image_click_teleop.egg-info/top_level.txt
+reading manifest file 'image_click_teleop.egg-info/SOURCES.txt'
+writing manifest file 'image_click_teleop.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/python3.12/site-packages/image-click-teleop.egg-link (link to .)
+Installing camera_publisher script to /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/image_click_teleop
+Installing click_teleop script to /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/lib/image_click_teleop
+
+Installed /home/maria/ros2_project_ws/src/Tools-and-Software-Project/build/image_click_teleop
+running symlink_data
+symbolically linking /home/maria/ros2_project_ws/src/Tools-and-Software-Project/build/image_click_teleop/resource/image_click_teleop -> /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/share/ament_index/resource_index/packages
+symbolically linking /home/maria/ros2_project_ws/src/Tools-and-Software-Project/build/image_click_teleop/package.xml -> /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/share/image_click_teleop
+symbolically linking /home/maria/ros2_project_ws/src/Tools-and-Software-Project/build/image_click_teleop/launch/click_teleop.launch.py -> /home/maria/ros2_project_ws/src/Tools-and-Software-Project/install/image_click_teleop/share/image_click_teleop/launch
