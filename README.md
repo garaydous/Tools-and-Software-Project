@@ -69,7 +69,7 @@ source /opt/ros/jazzy/setup.bash
 mkdir -p ~/.ursim/urcaps
 mkdir -p ~/.ursim/programs
 cd ~/.ursim/urcaps
-wget https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver/raw/main/ur_robot_driver/resources/externalcontrol-1.0.5.urcap
+wget https://github.com/UniversalRobots/Universal_Robots_ExternalControl_URCap/releases/download/v1.0.5/externalcontrol-1.0.5.jar
 
 ```
 
